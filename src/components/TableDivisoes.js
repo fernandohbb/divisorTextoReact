@@ -1,9 +1,11 @@
-
+import React from 'react';
 import Table from 'react-bootstrap/Table';
 
 export const TableDivisoes = ({textoDividido}) => {
 
-  
+  const copiarTextoDividido = (textoParaCopiar)=>{
+                          navigator.clipboard.writeText();
+  }
 
     return (
         <Table striped bordered hover variant="dark" id="tab">
@@ -11,9 +13,11 @@ export const TableDivisoes = ({textoDividido}) => {
               <tbody id='tbody'>
                     { textoDividido.map(divisao => (
                         <tr>
-                      <th id="qnt"></th>
+                      <th id="qnt">#</th>
                       <th id="texto-dividido" >{divisao}</th>
-                      <th id="copiar-texto"><button>Copiar</button></th>
+                      <th id="copiar-texto"><button onClick={copiarTextoDividido()}>Copiar</button></th>
+                     
+
                       </tr>
                       )
                       ) 
@@ -23,3 +27,4 @@ export const TableDivisoes = ({textoDividido}) => {
       
     )
 }
+                    //btn.onclick = function (){ copiarTextoDividido("tdDividido" + (i + 1))};

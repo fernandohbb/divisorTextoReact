@@ -1,4 +1,5 @@
 import './App.css';
+import React from 'react'
 import { useState } from "react"
 import { Menu} from './components/Menu';
 import { Textoarea} from './components/Textoarea';
