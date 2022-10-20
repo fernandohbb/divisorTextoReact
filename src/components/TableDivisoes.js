@@ -7,6 +7,7 @@ export const TableDivisoes = ({textoDividido}) => {
                           navigator.clipboard.writeText();
   }
 
+
     return (
         <Table striped bordered hover variant="dark" id="tab">
               
@@ -15,9 +16,7 @@ export const TableDivisoes = ({textoDividido}) => {
                         <tr>
                       <th id="qnt">#</th>
                       <th id="texto-dividido" >{divisao}</th>
-                      <th id="copiar-texto"><button onClick={copiarTextoDividido()}>Copiar</button></th>
-                     
-
+                      <th id="copiar-texto"><button onClick={copiarTextoDividido(divisao)}>Copiar</button></th>
                       </tr>
                       )
                       ) 

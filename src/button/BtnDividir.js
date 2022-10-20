@@ -65,25 +65,23 @@ export const BtnDividir = ({setDivisoes}) => {
      slides.push(textoSlide.trim());
      }
      setDivisoes(slides);
-     setDivisoes.forEach(texto => (texto));
 
-        for(let i = 0; i < setDivisoes.length; i++){
-           var texto = setDivisoes
-            var tbody = document.querySelector("#tbody")
-            var tr =  document.createElement("tr");
-            tr = tbody.insertRow();
+        //for(let i = 0; i < slides.length; i++){
+            //var tbody = document.querySelector("#tbody")
+           // var tr =  document.createElement("tr");
+            //tr = tbody.insertRow();
         
-            var tdQnt = tr.insertCell();
-            var tdTexto = tr.insertCell();
+           // var tdQnt = tr.insertCell();
+            //var tdTexto = tr.insertCell();
             //var tdBotaoCopiar = tr.insertCell();
-            tdQnt.innerHTML = i + 1
-            tdTexto.id = "tdDividido" + (i +1);
+            //tdQnt.innerHTML = i + 1
+            //tdTexto.id = "tdDividido" + (i +1);
             //var btn = document.createElement("button");
             //btn.onclick = function (){ copiarTextoDividido("tdDividido" + (i + 1))};
             //btn.innerText = "Copiar";
             //tdBotaoCopiar.appendChild(btn);
-            tdTexto.innerHTML = texto;
-        }
+            //tdTexto.innerHTML = texto;
+        //}
       }
     return (
      <div>

@@ -14,7 +14,7 @@ function App() {
 
     const[divisoes, setDivisoes] = useState([]);
     const[limpar, setLimpar] = useState();    
-    //const[qnt, setQnt] = useState("#");    
+    //const[qnt, setQnt] = useState([]);    
     const [textoUsuario, setTextoarea] = useState("")
 
   return (
@@ -23,7 +23,7 @@ function App() {
       <Textoarea textoUsuario={textoUsuario} setTextoarea={setTextoarea}/>
       <BtnDividir setDivisoes={setDivisoes} />
       <BtnLimpar setLimpar={setLimpar}/>
-      <TableDivisoes textoDividido={divisoes}   />
+      <TableDivisoes textoDividido={divisoes}/>
       <Footer></Footer>
           </div>
   );
