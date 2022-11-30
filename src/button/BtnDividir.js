@@ -2,13 +2,10 @@ import React from 'react'
 import { Button } from 'react-bootstrap';
 
 export const BtnDividir = ({setDivisoes}) => {
-    //function copiarTextoDividido (){
-        //var td = document.querySelector("#" + idDoTd );
-        //navigator.clipboard.writeText(td.innerText)
-     //}
+   
 
     function dividirTexto(){
-        var slides = [];
+     var slides = [];
      var textoUsuario = document.querySelector('#dividir').value
      while (textoUsuario.trim().length > 0) {
      var textoSlide = textoUsuario.substring(0,385);
@@ -65,27 +62,15 @@ export const BtnDividir = ({setDivisoes}) => {
      slides.push(textoSlide.trim());
      }
      setDivisoes(slides);
-
-        //for(let i = 0; i < slides.length; i++){
-            //var tbody = document.querySelector("#tbody")
-           // var tr =  document.createElement("tr");
-            //tr = tbody.insertRow();
-        
-           // var tdQnt = tr.insertCell();
-            //var tdTexto = tr.insertCell();
-            //var tdBotaoCopiar = tr.insertCell();
-            //tdQnt.innerHTML = i + 1
-            //tdTexto.id = "tdDividido" + (i +1);
-            //var btn = document.createElement("button");
-            //btn.onclick = function (){ copiarTextoDividido("tdDividido" + (i + 1))};
-            //btn.innerText = "Copiar";
-            //tdBotaoCopiar.appendChild(btn);
-            //tdTexto.innerHTML = texto;
-        //}
       }
     return (
-     <div>
-    <Button variant="primary" onClick={dividirTexto} className="btn-dividir">Dividir</Button>
-         </div>
+    <div>
+    <Button 
+            variant="primary"
+            onClick={dividirTexto}
+            className="btn-dividir">
+            Dividir
+    </Button>
+    </div>
     )
 }

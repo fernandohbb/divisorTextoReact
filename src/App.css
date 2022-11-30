@@ -84,7 +84,6 @@ ul {
   }    
   Button.btn-dividir{
     margin-bottom: -12px;
-    margin-top: 10px;
     font-size: 25px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
@@ -93,7 +92,6 @@ ul {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 89.2%;
     margin-left: 65px;
-    margin-top: 0px;
   }
   #tab{
     width: 90%;
