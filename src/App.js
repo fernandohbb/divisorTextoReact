@@ -19,7 +19,7 @@ return (
     <div className="App">
       <Menu name=".com" />
       <Textoarea textoUsuario={textoUsuario} 
-                 setTextoUsuario={setTextoUsuario}/>
+                setTextoUsuario={setTextoUsuario}/>
       <BtnDividir setDivisoes={setDivisoes} />
       <BtnLimpar funcaoLimpar={setTextoUsuario}/>
       <TableDivisoes textoDividido={divisoes}/>
