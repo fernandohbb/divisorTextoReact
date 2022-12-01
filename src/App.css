@@ -62,6 +62,7 @@ ul {
     width: 92%;
     margin-left: 50px;
   }
+ 
   textarea{
     background-color: white;
     color:black;
@@ -83,15 +84,18 @@ ul {
     border: 1px solid #3466f6;
   }    
   Button.btn-dividir{
+    width: 46%;
     margin-bottom: -12px;
+    margin-left: 50px;
     font-size: 25px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   Button.btn-limpar{
     font-size: 25px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 89.2%;
-    margin-left: 65px;
+    width: 46%;
+    margin-top: -53px;
+    margin-left: 50%;
   }
   #tab{
     width: 90%;

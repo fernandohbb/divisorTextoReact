@@ -5,6 +5,7 @@ export const TableDivisoes = ({ textoDividido }) => {
 
   const copiarTextoDividido = (textoParaCopiar) => {
     navigator.clipboard.writeText(textoParaCopiar);
+    alert("Copiado!")
 }
 
   return (
@@ -15,19 +16,19 @@ export const TableDivisoes = ({ textoDividido }) => {
           textoDividido.map(
           divisao => {
             return (
-              <tr>
-                <th id="qnt">
-                  {divisao.lenght}
-                  </th>
-                <th id="texto-dividido" >
-                  {divisao}
-                  </th>
-                <th id="copiar-texto">
-                  <button onClick={ function() { copiarTextoDividido(divisao) }}>
-                  Copiar
-                </button>
-                </th>
-              </tr>
+                  <tr>
+                        <th id="qnt">
+                              {divisao.lenght}
+                        </th>
+                        <th id="texto-dividido" >
+                              {divisao}
+                        </th>
+                        <th id="copiar-texto">
+                              <button onClick={ function() { copiarTextoDividido(divisao) }}>
+                              Copiar
+                      </button>
+                        </th>
+                  </tr>
             )
           }
         )
