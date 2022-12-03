@@ -144,24 +144,14 @@ ul {
     text-align: center;
   }
   .footer > * {
-    flex:  1 70%;
+    flex:  1 0%;
   }
   .footer__logo {
     font-family: 'Pacifico', cursive;
-    font-weight: 400;
-    text-transform: lowercase;
     font-size: 2rem;
-  }
-  .footer__addr h2 {
-    margin-top: 1.7em;
-    font-size: 16px;
-    font-weight: 450;
-  }
-  .legal {
-    display: flex;
-    flex-wrap: wrap;
-    color: rgb(228, 224, 224);
+    text-align: center;
+
   }
   .footer-spam{
-    color: #ffc107 ;
+    color: #000d85 ;
   }

@@ -2,11 +2,11 @@ import { Button } from 'react-bootstrap';
 import React from 'react'
 export const BtnLimpar = ({funcaoLimpar}) => {
 
-    function limparTexto(){
-      funcaoLimpar("");
-    }
+function limparTexto(){
+          funcaoLimpar("");
+}
 
-    return (
+  return (
     <div>
         <Button variant="primary"
                 className='btn-limpar'
@@ -14,5 +14,5 @@ export const BtnLimpar = ({funcaoLimpar}) => {
                 Limpar 
         </Button>
     </div>
-    )
+ )
 }

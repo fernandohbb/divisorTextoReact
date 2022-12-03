@@ -16,7 +16,7 @@ export const TableDivisoes = ({ textoDividido }) => {
           textoDividido.map(
           divisao => {
             return (
-                  <tr>
+                <tr>
                         <th id="qnt">
                               {divisao.lenght}
                         </th>

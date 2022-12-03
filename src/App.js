@@ -2,7 +2,7 @@ import './App.css';
 import React from 'react'
 import { useState } from "react"
 import { Menu} from './components/Menu';
-import { Textoarea} from './components/Textoarea';
+import { TextoParaDividir} from './components/TextoParaDividir';
 import { BtnDividir} from './button/BtnDividir';
 import { BtnLimpar} from './button/BtnLimpar';
 import { TableDivisoes} from './components/TableDivisoes';
@@ -18,7 +18,7 @@ const [textoUsuario, setTextoUsuario] = useState("1No princípio, criou Deus os 
 return (
     <div className="App">
       <Menu name=".com" />
-      <Textoarea textoUsuario={textoUsuario} 
+      <TextoParaDividir textoUsuario={textoUsuario} 
                 setTextoUsuario={setTextoUsuario}/>
       <BtnDividir setDivisoes={setDivisoes} />
       <BtnLimpar funcaoLimpar={setTextoUsuario}/>
@@ -27,4 +27,5 @@ return (
     </div>
   );
 }
+
 export default App;
