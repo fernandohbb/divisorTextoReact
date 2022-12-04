@@ -35,6 +35,5 @@ export const TableDivisoes = ({ textoDividido }) => {
         }
       </tbody>
     </Table>
-
   )
 }
