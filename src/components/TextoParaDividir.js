@@ -1,8 +1,6 @@
 import { FaDivide} from "react-icons/fa";
 import React from 'react';
 
-
-
 export const TextoParaDividir = ({textoUsuario, setTextoUsuario}) => {
 
     return (

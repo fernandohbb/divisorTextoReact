@@ -9,7 +9,6 @@ import { TableDivisoes} from './components/TableDivisoes';
 import { Footer} from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
 function App() {
 
 const[divisoes, setDivisoes] = useState([]);

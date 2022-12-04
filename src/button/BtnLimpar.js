@@ -3,7 +3,7 @@ import React from 'react'
 export const BtnLimpar = ({funcaoLimpar}) => {
 
 function limparTexto(){
-          funcaoLimpar(" ");
+          funcaoLimpar("");
 }
 
   return (
