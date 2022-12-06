@@ -5,13 +5,15 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import {BsLayersFill} from "react-icons/bs";
 
-
-
 export const Menu = (props) => {
     return (
       <Navbar className="navbar" expand="lg">
       <Container className='nav-contanier' fluid>
-        <Navbar.Brand href="#"><BsLayersFill className='icone-logo'/><spam className="spam-d">DIV</spam>TEXT{props.name}</Navbar.Brand>
+        <Navbar.Brand href="#"><BsLayersFill className='icone-logo'/>
+        <span className="spam-d">
+          DIV
+          </span>TEXT{props.name}
+          </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -30,7 +32,6 @@ export const Menu = (props) => {
           </Nav>
         </Navbar.Collapse>
       </Container>
-    </Navbar>
-    
+      </Navbar>
     )
 }
