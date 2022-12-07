@@ -9,8 +9,9 @@ export const BtnDividir = ({setDivisoes}) => {
           let textoUsuario = document.querySelector('#dividir').value
           while (textoUsuario.trim().length > 0) {
           let textoSlide = textoUsuario.substring(0,385);
-          let ultimaLinha = textoSlide.substring(310);     
-          let indicePontoTextoUsuario = 310 + ultimaLinha.indexOf(' 1') ;
+          const indiceInicioUltimaLinha = 310;
+          let ultimaLinha = textoSlide.substring(indiceInicioUltimaLinha);   
+          let posicaoDosCaracteres= indiceInicioUltimaLinha + ultimaLinha.indexOf(' 1') ;
 
           const versiculo1NaoEncontrado = ultimaLinha.indexOf(' 1') === -1 ;
           const versiculo2NaoEncontrado = ultimaLinha.indexOf(' 2') === -1 ;
@@ -30,25 +31,25 @@ export const BtnDividir = ({setDivisoes}) => {
           const virgulaNaoEncontrado = ultimaLinha.indexOf(' ') === -1;
 
           if(versiculo1NaoEncontrado){
-               indicePontoTextoUsuario = 310 + ultimaLinha.indexOf(' 2');
+               posicaoDosCaracteres= indiceInicioUltimaLinha + ultimaLinha.indexOf(' 2');
           }
 
           if(versiculo1NaoEncontrado 
              && versiculo2NaoEncontrado){
-               indicePontoTextoUsuario = 310 + ultimaLinha.indexOf(' 3');
+               posicaoDosCaracteres= indiceInicioUltimaLinha + ultimaLinha.indexOf(' 3');
           }
 
           if(versiculo1NaoEncontrado 
              && versiculo2NaoEncontrado 
              && versiculo3NaoEncontrado ){
-              indicePontoTextoUsuario = 310 + ultimaLinha.indexOf(' 4');
+              posicaoDosCaracteres= indiceInicioUltimaLinha + ultimaLinha.indexOf(' 4');
           }
 
           if(versiculo1NaoEncontrado 
              && versiculo2NaoEncontrado 
              && versiculo3NaoEncontrado
              && versiculo4NaoEncontrado ){
-              indicePontoTextoUsuario = 310 + ultimaLinha.indexOf(' 5');
+              posicaoDosCaracteres= indiceInicioUltimaLinha + ultimaLinha.indexOf(' 5');
           }
 
           if(versiculo1NaoEncontrado 
@@ -56,7 +57,7 @@ export const BtnDividir = ({setDivisoes}) => {
              && versiculo3NaoEncontrado
              && versiculo4NaoEncontrado 
              && versiculo5NaoEncontrado){
-              indicePontoTextoUsuario = 310 + ultimaLinha.indexOf(' 6');
+              posicaoDosCaracteres= indiceInicioUltimaLinha + ultimaLinha.indexOf(' 6');
           }
 
           if(versiculo1NaoEncontrado 
@@ -65,7 +66,7 @@ export const BtnDividir = ({setDivisoes}) => {
              && versiculo4NaoEncontrado 
              && versiculo5NaoEncontrado 
              &&  versiculo6NaoEncontrado  ){
-             indicePontoTextoUsuario = 310 + ultimaLinha.indexOf(' 7');
+             posicaoDosCaracteres= indiceInicioUltimaLinha + ultimaLinha.indexOf(' 7');
           }
 
           if(versiculo1NaoEncontrado 
@@ -75,7 +76,7 @@ export const BtnDividir = ({setDivisoes}) => {
              && versiculo5NaoEncontrado 
              &&  versiculo6NaoEncontrado
              && versiculo7NaoEncontrado ){
-               indicePontoTextoUsuario = 310 + ultimaLinha.indexOf(' 8');
+               posicaoDosCaracteres= indiceInicioUltimaLinha + ultimaLinha.indexOf(' 8');
           }
 
           if(versiculo1NaoEncontrado 
@@ -86,7 +87,7 @@ export const BtnDividir = ({setDivisoes}) => {
              && versiculo6NaoEncontrado 
              && versiculo7NaoEncontrado 
              && versiculo8NaoEncontrado ){
-               indicePontoTextoUsuario = 310 + ultimaLinha.indexOf(' 9');
+               posicaoDosCaracteres= indiceInicioUltimaLinha + ultimaLinha.indexOf(' 9');
           }
 
           if(versiculo1NaoEncontrado 
@@ -98,29 +99,29 @@ export const BtnDividir = ({setDivisoes}) => {
              && versiculo7NaoEncontrado 
              && versiculo8NaoEncontrado 
              && versiculo9NaoEncontrado){
-               indicePontoTextoUsuario = 310 + ultimaLinha.indexOf('. ');
+               posicaoDosCaracteres= indiceInicioUltimaLinha + ultimaLinha.indexOf('. ');
           }     
 
           if(pontoFinalNaoEncontrado){
-               indicePontoTextoUsuario = 310 + pontoInterrogacaoNaoEncontrado;
+               posicaoDosCaracteres= indiceInicioUltimaLinha + pontoInterrogacaoNaoEncontrado;
           }
 
           if(pontoFinalNaoEncontrado 
              && pontoInterrogacaoNaoEncontrado){
-               indicePontoTextoUsuario = 310 + ultimaLinha.indexOf('!');
+               posicaoDosCaracteres= indiceInicioUltimaLinha + ultimaLinha.indexOf('!');
           }
 
           if(pontoFinalNaoEncontrado 
              && pontoInterrogacaoNaoEncontrado 
              && pontoExclamacaoNaoEncontrado){
-               indicePontoTextoUsuario = 310 + ultimaLinha.indexOf(':');
+               posicaoDosCaracteres= indiceInicioUltimaLinha + ultimaLinha.indexOf(':');
           }
 
           if(pontoFinalNaoEncontrado 
              && pontoInterrogacaoNaoEncontrado 
              && pontoExclamacaoNaoEncontrado 
              && doisPontosNaoEncontrado){
-               indicePontoTextoUsuario = 310 + ultimaLinha.indexOf(';');
+               posicaoDosCaracteres= indiceInicioUltimaLinha + ultimaLinha.indexOf(';');
           }
 
           if(pontoFinalNaoEncontrado  
@@ -128,7 +129,7 @@ export const BtnDividir = ({setDivisoes}) => {
              && pontoExclamacaoNaoEncontrado
              && doisPontosNaoEncontrado 
              && pontoVirgulaNaoEncontrado){
-               indicePontoTextoUsuario = 310 + ultimaLinha.indexOf(',');
+               posicaoDosCaracteres= indiceInicioUltimaLinha + ultimaLinha.indexOf(',');
           }
           if(pontoFinalNaoEncontrado  
              && pontoInterrogacaoNaoEncontrado 
@@ -136,12 +137,12 @@ export const BtnDividir = ({setDivisoes}) => {
              && doisPontosNaoEncontrado 
              && pontoVirgulaNaoEncontrado 
              && virgulaNaoEncontrado){
-               indicePontoTextoUsuario = 310 + ultimaLinha.indexOf(' ');
+               posicaoDosCaracteres= indiceInicioUltimaLinha + ultimaLinha.indexOf(' ');
           }    
 
           console.log({ultimaLinha})
-          textoSlide = textoUsuario.substring(0,indicePontoTextoUsuario +1);
-          textoUsuario = textoUsuario.substring(indicePontoTextoUsuario +1);
+          textoSlide = textoUsuario.substring(0,posicaoDosCaracteres+1);
+          textoUsuario = textoUsuario.substring(posicaoDosCaracteres+1);
           slides.push(textoSlide.trim());
           }
           setDivisoes(slides);
