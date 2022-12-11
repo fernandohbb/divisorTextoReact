@@ -21,7 +21,6 @@ export const Menu = (props) => {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Inicio</Nav.Link>
             <Nav.Link href="#action2">Sobre</Nav.Link>
             <NavDropdown title="Referencias" id="navbarScrollingDropdown">
               <NavDropdown.Item href="https://www.bible.com/pt/bible/1608/GEN.1.ARA" target="_blank">Biblia Sagrada</NavDropdown.Item>
